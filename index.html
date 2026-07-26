@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New repos on GitHub per month(updated daily)</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --accent: #2a78d6;
+    --accent-line: #e34948;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 6px; }
+  .sub { color: var(--text-dim); font-size: 17px; margin: 0 0 6px; }
+  .updated { color: var(--text-dim); font-size: 16px; margin: 0 0 24px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .legend { display: flex; gap: 16px; margin-top: 8px; font-size: 15px; color: var(--text-dim); }
+  .legend span { display: flex; align-items: center; gap: 5px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+  .line { width: 14px; height: 2px; background: var(--accent); }
+  .dashed { width: 14px; height: 0; border-top: 2px dashed var(--accent-line); }
+  .msg { color: var(--text-dim); font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>New GitHub Repositories Created Per Month</h1>
+  <p class="msg" style="margin: 0 0 20px;">
+    This graph is updated daily. The data is fetched from the GitHub Search API. It covers ONLY public repos - private
+    repos are NOT counted because they are invisible to this API. The current month is excluded because it is still in 
+    progress.
+  </p>
+  <p class="updated" id="updated"></p>
+
+  <div class="panel">
+    <div style="position:relative; width:100%; height:380px;">
+      <canvas id="chart" role="img" aria-label="Chart of new GitHub repositories created per month since 2008, with a marker at ChatGPT's release in November 2022"></canvas>
+    </div>
+    <div class="legend">
+      <span><span class="dot"></span>Monthly count</span>
+      <span><span class="line"></span>Smoothed curve</span>
+      <span><span class="dashed"></span>ChatGPT release (Nov 30, 2022)</span>
+    </div>
+    <p class="msg" id="msg" style="display:none;"></p>
+  </div>
+
+  <p class="msg" style="margin: 20px 0 0;">
+    The API gives the program the y number of repos created during x month by scraping all CURRENTLY AVAILABLE public
+    repos. This means that if a repo is DELETED, it will no longer be counted by the API, and thus decrease the y repo
+    counter for x month. Basically, what this means is that if the graph shows March 2019 with 1.3 million repos today, 
+    it can show 1.2 million repos next week - if 100,000 public repos made in March 2019 are deleted or made private 
+    during that time frame.
+  </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+<script>
+Chart.register(window['chartjs-plugin-annotation']);
+
+function decimalYear(monthStr) {
+  const [y, m] = monthStr.split('-').map(Number);
+  return y + (m - 0.5) / 12;
+}
+
+function renderChart(rows) {
+  const now = new Date();
+  const currentMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+  const clean = rows.filter(r => r.new_repos !== null && r.new_repos !== undefined && r.month !== currentMonth);
+  const points = clean.map(r => ({ x: decimalYear(r.month), y: r.new_repos, month: r.month }));
+  const chatgptX = 2022 + (334 - 0.5) / 365; // Nov 30, 2022
+
+  new Chart(document.getElementById('chart'), {
+    type: 'line',
+    data: {
+      datasets: [
+        {
+          label: 'Smoothed trend',
+          data: points,
+          borderColor: '#2a78d6',
+          backgroundColor: 'transparent',
+          tension: 0.4,
+          pointRadius: 0,
+          pointHitRadius: 0,
+          pointHoverRadius: 0,
+          borderWidth: 2,
+          fill: false
+        },
+        {
+          label: 'Monthly count',
+          data: points,
+          type: 'scatter',
+          backgroundColor: '#2a78d6',
+          borderColor: '#161b22',
+          borderWidth: 1,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+          showLine: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'nearest', intersect: true },
+      scales: {
+        x: {
+          type: 'linear',
+          ticks: { color: '#8b949e', callback: (v) => Math.round(v) },
+          grid: { display: false },
+          title: { display: true, text: 'Year', color: '#8b949e', font: { size: 16 } }
+        },
+        y: {
+          ticks: { color: '#8b949e', callback: (v) => v.toLocaleString() },
+          grid: { color: '#30363d' },
+          title: { display: true, text: 'New repos created', color: '#8b949e', font: { size: 16 } }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => points[items[0].dataIndex]?.month ?? '',
+            label: (item) => item.parsed.y.toLocaleString() + ' new repos'
+          }
+        },
+        annotation: {
+          annotations: {
+            chatgptLine: {
+              type: 'line',
+              xMin: chatgptX,
+              xMax: chatgptX,
+              borderColor: '#e34948',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              label: {
+                display: true,
+                content: 'ChatGPT release',
+                position: 'start',
+                backgroundColor: '#e34948',
+                color: '#fff',
+                font: { size: 11 },
+                padding: 4
+              }
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+async function load() {
+  const msgEl = document.getElementById('msg');
+
+  if (typeof Chart === 'undefined') {
+    msgEl.style.display = 'block';
+    msgEl.textContent = 'Could not load the charting library (Chart.js) from the CDN. This page needs an internet connection the first time it loads. Check your connection and refresh.';
+    return;
+  }
+
+  try {
+    const res = await fetch('./data.json?_=' + Date.now());
+    if (!res.ok) throw new Error('data.json not found');
+    const rows = await res.json();
+    if (!rows || rows.length === 0) throw new Error('data.json is empty');
+    document.getElementById('updated').textContent =
+      `Loaded ${rows.length - 1} months of data. Refresh the page for the latest data.`;
+    renderChart(rows);
+  } catch (err) {
+    msgEl.style.display = 'block';
+    msgEl.textContent = 'No data.json found next to this page yet. Run update-data.ps1 first.';
+  }
+}
+
+load();
+</script>
+</body>
+</html>

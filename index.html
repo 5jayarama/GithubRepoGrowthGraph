@@ -45,7 +45,7 @@
 <div class="wrap">
   <h1>New GitHub Repositories Created Per Month</h1>
   <p class="msg" style="margin: 0 0 20px;">
-    This graph is updated daily. The data is fetched from the GitHub Search API. It covers ONLY public repos - private
+    This graph is updated only on commit. The data is fetched from the GitHub Search API. It covers ONLY public repos - private
     repos are NOT counted because they are invisible to this API. The current month is excluded because it is still in 
     progress.
   </p>
@@ -61,6 +61,7 @@
       <span><span class="dashed"></span>ChatGPT release (Nov 30, 2022)</span>
     </div>
     <p class="msg" id="msg" style="display:none;"></p>
+    <p class="msg" id="failures" style="display:none; color:#e34948; margin-top:12px;"></p>
   </div>
 
   <p class="msg" style="margin: 20px 0 0;">
@@ -171,6 +172,7 @@ function renderChart(rows) {
 
 async function load() {
   const msgEl = document.getElementById('msg');
+  const failEl = document.getElementById('failures');
 
   if (typeof Chart === 'undefined') {
     msgEl.style.display = 'block';
@@ -181,11 +183,23 @@ async function load() {
   try {
     const res = await fetch('./data.json?_=' + Date.now());
     if (!res.ok) throw new Error('data.json not found');
-    const rows = await res.json();
+    const parsed = await res.json();
+
+    // Support both the new { rows, failures } structure and the old flat-array format
+    const rows = Array.isArray(parsed) ? parsed : (parsed.rows || []);
+    const failures = Array.isArray(parsed) ? [] : (parsed.failures || []);
+
     if (!rows || rows.length === 0) throw new Error('data.json is empty');
     document.getElementById('updated').textContent =
       `Loaded ${rows.length - 1} months of data. Refresh the page for the latest data.`;
     renderChart(rows);
+
+    if (failures.length > 0) {
+      failEl.style.display = 'block';
+      failEl.textContent = `\u26A0 These months failed to fetch after 3 attempts and are missing from the chart: ${failures.join(', ')}`;
+    } else {
+      failEl.style.display = 'none';
+    }
   } catch (err) {
     msgEl.style.display = 'block';
     msgEl.textContent = 'No data.json found next to this page yet. Run update-data.ps1 first.';

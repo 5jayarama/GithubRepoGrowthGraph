@@ -1,890 +1,899 @@
-﻿[
-    {
-        "month":  "2008-02",
-        "new_repos":  292
-    },
-    {
-        "month":  "2008-03",
-        "new_repos":  692
-    },
-    {
-        "month":  "2008-04",
-        "new_repos":  1220
-    },
-    {
-        "month":  "2008-05",
-        "new_repos":  1403
-    },
-    {
-        "month":  "2008-06",
-        "new_repos":  1547
-    },
-    {
-        "month":  "2008-07",
-        "new_repos":  1642
-    },
-    {
-        "month":  "2008-08",
-        "new_repos":  1943
-    },
-    {
-        "month":  "2008-09",
-        "new_repos":  2218
-    },
-    {
-        "month":  "2008-10",
-        "new_repos":  2607
-    },
-    {
-        "month":  "2008-11",
-        "new_repos":  2960
-    },
-    {
-        "month":  "2008-12",
-        "new_repos":  3884
-    },
-    {
-        "month":  "2009-01",
-        "new_repos":  4795
-    },
-    {
-        "month":  "2009-02",
-        "new_repos":  5147
-    },
-    {
-        "month":  "2009-03",
-        "new_repos":  5718
-    },
-    {
-        "month":  "2009-04",
-        "new_repos":  5873
-    },
-    {
-        "month":  "2009-05",
-        "new_repos":  6321
-    },
-    {
-        "month":  "2009-06",
-        "new_repos":  5786
-    },
-    {
-        "month":  "2009-07",
-        "new_repos":  6166
-    },
-    {
-        "month":  "2009-08",
-        "new_repos":  6291
-    },
-    {
-        "month":  "2009-09",
-        "new_repos":  6881
-    },
-    {
-        "month":  "2009-10",
-        "new_repos":  7763
-    },
-    {
-        "month":  "2009-11",
-        "new_repos":  8350
-    },
-    {
-        "month":  "2009-12",
-        "new_repos":  8565
-    },
-    {
-        "month":  "2010-01",
-        "new_repos":  10160
-    },
-    {
-        "month":  "2010-02",
-        "new_repos":  10718
-    },
-    {
-        "month":  "2010-03",
-        "new_repos":  12562
-    },
-    {
-        "month":  "2010-04",
-        "new_repos":  11759
-    },
-    {
-        "month":  "2010-05",
-        "new_repos":  12014
-    },
-    {
-        "month":  "2010-06",
-        "new_repos":  12643
-    },
-    {
-        "month":  "2010-07",
-        "new_repos":  13603
-    },
-    {
-        "month":  "2010-08",
-        "new_repos":  15214
-    },
-    {
-        "month":  "2010-09",
-        "new_repos":  16943
-    },
-    {
-        "month":  "2010-10",
-        "new_repos":  23025
-    },
-    {
-        "month":  "2010-11",
-        "new_repos":  21242
-    },
-    {
-        "month":  "2010-12",
-        "new_repos":  20127
-    },
-    {
-        "month":  "2011-01",
-        "new_repos":  24686
-    },
-    {
-        "month":  "2011-02",
-        "new_repos":  26736
-    },
-    {
-        "month":  "2011-03",
-        "new_repos":  30213
-    },
-    {
-        "month":  "2011-04",
-        "new_repos":  30860
-    },
-    {
-        "month":  "2011-05",
-        "new_repos":  32811
-    },
-    {
-        "month":  "2011-06",
-        "new_repos":  34759
-    },
-    {
-        "month":  "2011-07",
-        "new_repos":  34638
-    },
-    {
-        "month":  "2011-08",
-        "new_repos":  37272
-    },
-    {
-        "month":  "2011-09",
-        "new_repos":  41747
-    },
-    {
-        "month":  "2011-10",
-        "new_repos":  42189
-    },
-    {
-        "month":  "2011-11",
-        "new_repos":  45653
-    },
-    {
-        "month":  "2011-12",
-        "new_repos":  43952
-    },
-    {
-        "month":  "2012-01",
-        "new_repos":  52452
-    },
-    {
-        "month":  "2012-02",
-        "new_repos":  59769
-    },
-    {
-        "month":  "2012-03",
-        "new_repos":  66895
-    },
-    {
-        "month":  "2012-04",
-        "new_repos":  67216
-    },
-    {
-        "month":  "2012-05",
-        "new_repos":  69729
-    },
-    {
-        "month":  "2012-06",
-        "new_repos":  70289
-    },
-    {
-        "month":  "2012-07",
-        "new_repos":  102907
-    },
-    {
-        "month":  "2012-08",
-        "new_repos":  81676
-    },
-    {
-        "month":  "2012-09",
-        "new_repos":  86599
-    },
-    {
-        "month":  "2012-10",
-        "new_repos":  101956
-    },
-    {
-        "month":  "2012-11",
-        "new_repos":  107229
-    },
-    {
-        "month":  "2012-12",
-        "new_repos":  97528
-    },
-    {
-        "month":  "2013-01",
-        "new_repos":  126347
-    },
-    {
-        "month":  "2013-02",
-        "new_repos":  127052
-    },
-    {
-        "month":  "2013-03",
-        "new_repos":  151447
-    },
-    {
-        "month":  "2013-04",
-        "new_repos":  153228
-    },
-    {
-        "month":  "2013-05",
-        "new_repos":  149704
-    },
-    {
-        "month":  "2013-06",
-        "new_repos":  140284
-    },
-    {
-        "month":  "2013-07",
-        "new_repos":  153724
-    },
-    {
-        "month":  "2013-08",
-        "new_repos":  147579
-    },
-    {
-        "month":  "2013-09",
-        "new_repos":  160474
-    },
-    {
-        "month":  "2013-10",
-        "new_repos":  184242
-    },
-    {
-        "month":  "2013-11",
-        "new_repos":  183672
-    },
-    {
-        "month":  "2013-12",
-        "new_repos":  167932
-    },
-    {
-        "month":  "2014-01",
-        "new_repos":  202127
-    },
-    {
-        "month":  "2014-02",
-        "new_repos":  207791
-    },
-    {
-        "month":  "2014-03",
-        "new_repos":  243057
-    },
-    {
-        "month":  "2014-04",
-        "new_repos":  248830
-    },
-    {
-        "month":  "2014-05",
-        "new_repos":  248252
-    },
-    {
-        "month":  "2014-06",
-        "new_repos":  235783
-    },
-    {
-        "month":  "2014-07",
-        "new_repos":  269742
-    },
-    {
-        "month":  "2014-08",
-        "new_repos":  264274
-    },
-    {
-        "month":  "2014-09",
-        "new_repos":  276109
-    },
-    {
-        "month":  "2014-10",
-        "new_repos":  351498
-    },
-    {
-        "month":  "2014-11",
-        "new_repos":  303889
-    },
-    {
-        "month":  "2014-12",
-        "new_repos":  312617
-    },
-    {
-        "month":  "2015-01",
-        "new_repos":  376451
-    },
-    {
-        "month":  "2015-02",
-        "new_repos":  337756
-    },
-    {
-        "month":  "2015-03",
-        "new_repos":  453889
-    },
-    {
-        "month":  "2015-04",
-        "new_repos":  413730
-    },
-    {
-        "month":  "2015-05",
-        "new_repos":  406022
-    },
-    {
-        "month":  "2015-06",
-        "new_repos":  395482
-    },
-    {
-        "month":  "2015-07",
-        "new_repos":  423578
-    },
-    {
-        "month":  "2015-08",
-        "new_repos":  453692
-    },
-    {
-        "month":  "2015-09",
-        "new_repos":  451505
-    },
-    {
-        "month":  "2015-10",
-        "new_repos":  482132
-    },
-    {
-        "month":  "2015-11",
-        "new_repos":  474592
-    },
-    {
-        "month":  "2015-12",
-        "new_repos":  435109
-    },
-    {
-        "month":  "2016-01",
-        "new_repos":  506810
-    },
-    {
-        "month":  "2016-02",
-        "new_repos":  574558
-    },
-    {
-        "month":  "2016-03",
-        "new_repos":  645477
-    },
-    {
-        "month":  "2016-04",
-        "new_repos":  624918
-    },
-    {
-        "month":  "2016-05",
-        "new_repos":  600238
-    },
-    {
-        "month":  "2016-06",
-        "new_repos":  562382
-    },
-    {
-        "month":  "2016-07",
-        "new_repos":  585517
-    },
-    {
-        "month":  "2016-08",
-        "new_repos":  636369
-    },
-    {
-        "month":  "2016-09",
-        "new_repos":  706548
-    },
-    {
-        "month":  "2016-10",
-        "new_repos":  753205
-    },
-    {
-        "month":  "2016-11",
-        "new_repos":  749258
-    },
-    {
-        "month":  "2016-12",
-        "new_repos":  678621
-    },
-    {
-        "month":  "2017-01",
-        "new_repos":  750574
-    },
-    {
-        "month":  "2017-02",
-        "new_repos":  804706
-    },
-    {
-        "month":  "2017-03",
-        "new_repos":  948366
-    },
-    {
-        "month":  "2017-04",
-        "new_repos":  857463
-    },
-    {
-        "month":  "2017-05",
-        "new_repos":  876684
-    },
-    {
-        "month":  "2017-06",
-        "new_repos":  818031
-    },
-    {
-        "month":  "2017-07",
-        "new_repos":  847039
-    },
-    {
-        "month":  "2017-08",
-        "new_repos":  864132
-    },
-    {
-        "month":  "2017-09",
-        "new_repos":  934816
-    },
-    {
-        "month":  "2017-10",
-        "new_repos":  999404
-    },
-    {
-        "month":  "2017-11",
-        "new_repos":  1006707
-    },
-    {
-        "month":  "2017-12",
-        "new_repos":  889258
-    },
-    {
-        "month":  "2018-01",
-        "new_repos":  1033765
-    },
-    {
-        "month":  "2018-02",
-        "new_repos":  977712
-    },
-    {
-        "month":  "2018-03",
-        "new_repos":  1185786
-    },
-    {
-        "month":  "2018-04",
-        "new_repos":  1126819
-    },
-    {
-        "month":  "2018-05",
-        "new_repos":  1119826
-    },
-    {
-        "month":  "2018-06",
-        "new_repos":  1019871
-    },
-    {
-        "month":  "2018-07",
-        "new_repos":  1037751
-    },
-    {
-        "month":  "2018-08",
-        "new_repos":  1050569
-    },
-    {
-        "month":  "2018-09",
-        "new_repos":  1131053
-    },
-    {
-        "month":  "2018-10",
-        "new_repos":  1262807
-    },
-    {
-        "month":  "2018-11",
-        "new_repos":  1197206
-    },
-    {
-        "month":  "2018-12",
-        "new_repos":  1078405
-    },
-    {
-        "month":  "2019-01",
-        "new_repos":  1133418
-    },
-    {
-        "month":  "2019-02",
-        "new_repos":  1076625
-    },
-    {
-        "month":  "2019-03",
-        "new_repos":  1288491
-    },
-    {
-        "month":  "2019-04",
-        "new_repos":  1240221
-    },
-    {
-        "month":  "2019-05",
-        "new_repos":  1242630
-    },
-    {
-        "month":  "2019-06",
-        "new_repos":  1142374
-    },
-    {
-        "month":  "2019-07",
-        "new_repos":  1206750
-    },
-    {
-        "month":  "2019-08",
-        "new_repos":  1351045
-    },
-    {
-        "month":  "2019-09",
-        "new_repos":  1591137
-    },
-    {
-        "month":  "2019-10",
-        "new_repos":  1544275
-    },
-    {
-        "month":  "2019-11",
-        "new_repos":  1506120
-    },
-    {
-        "month":  "2019-12",
-        "new_repos":  1360117
-    },
-    {
-        "month":  "2020-01",
-        "new_repos":  1457305
-    },
-    {
-        "month":  "2020-02",
-        "new_repos":  1547992
-    },
-    {
-        "month":  "2020-03",
-        "new_repos":  1817017
-    },
-    {
-        "month":  "2020-04",
-        "new_repos":  1863791
-    },
-    {
-        "month":  "2020-05",
-        "new_repos":  1859762
-    },
-    {
-        "month":  "2020-06",
-        "new_repos":  1736164
-    },
-    {
-        "month":  "2020-07",
-        "new_repos":  1791631
-    },
-    {
-        "month":  "2020-08",
-        "new_repos":  1735491
-    },
-    {
-        "month":  "2020-09",
-        "new_repos":  1867125
-    },
-    {
-        "month":  "2020-10",
-        "new_repos":  1931616
-    },
-    {
-        "month":  "2020-11",
-        "new_repos":  1887362
-    },
-    {
-        "month":  "2020-12",
-        "new_repos":  1859488
-    },
-    {
-        "month":  "2021-01",
-        "new_repos":  1965957
-    },
-    {
-        "month":  "2021-02",
-        "new_repos":  1890111
-    },
-    {
-        "month":  "2021-03",
-        "new_repos":  2328628
-    },
-    {
-        "month":  "2021-04",
-        "new_repos":  2288094
-    },
-    {
-        "month":  "2021-05",
-        "new_repos":  2384242
-    },
-    {
-        "month":  "2021-06",
-        "new_repos":  2365691
-    },
-    {
-        "month":  "2021-07",
-        "new_repos":  2461671
-    },
-    {
-        "month":  "2021-08",
-        "new_repos":  2353502
-    },
-    {
-        "month":  "2021-09",
-        "new_repos":  2478638
-    },
-    {
-        "month":  "2021-10",
-        "new_repos":  2521058
-    },
-    {
-        "month":  "2021-11",
-        "new_repos":  2441605
-    },
-    {
-        "month":  "2021-12",
-        "new_repos":  2384715
-    },
-    {
-        "month":  "2022-01",
-        "new_repos":  2652512
-    },
-    {
-        "month":  "2022-02",
-        "new_repos":  2592254
-    },
-    {
-        "month":  "2022-03",
-        "new_repos":  2914169
-    },
-    {
-        "month":  "2022-04",
-        "new_repos":  2734895
-    },
-    {
-        "month":  "2022-05",
-        "new_repos":  2855797
-    },
-    {
-        "month":  "2022-06",
-        "new_repos":  2723536
-    },
-    {
-        "month":  "2022-07",
-        "new_repos":  2669664
-    },
-    {
-        "month":  "2022-08",
-        "new_repos":  2794982
-    },
-    {
-        "month":  "2022-09",
-        "new_repos":  2934703
-    },
-    {
-        "month":  "2022-10",
-        "new_repos":  3013063
-    },
-    {
-        "month":  "2022-11",
-        "new_repos":  3028326
-    },
-    {
-        "month":  "2022-12",
-        "new_repos":  2780888
-    },
-    {
-        "month":  "2023-01",
-        "new_repos":  2851544
-    },
-    {
-        "month":  "2023-02",
-        "new_repos":  2888806
-    },
-    {
-        "month":  "2023-03",
-        "new_repos":  3424378
-    },
-    {
-        "month":  "2023-04",
-        "new_repos":  3093458
-    },
-    {
-        "month":  "2023-05",
-        "new_repos":  3291170
-    },
-    {
-        "month":  "2023-06",
-        "new_repos":  3149154
-    },
-    {
-        "month":  "2023-07",
-        "new_repos":  3161462
-    },
-    {
-        "month":  "2023-08",
-        "new_repos":  3190758
-    },
-    {
-        "month":  "2023-09",
-        "new_repos":  3391185
-    },
-    {
-        "month":  "2023-10",
-        "new_repos":  3567891
-    },
-    {
-        "month":  "2023-11",
-        "new_repos":  3303211
-    },
-    {
-        "month":  "2023-12",
-        "new_repos":  3059794
-    },
-    {
-        "month":  "2024-01",
-        "new_repos":  3319590
-    },
-    {
-        "month":  "2024-02",
-        "new_repos":  3436655
-    },
-    {
-        "month":  "2024-03",
-        "new_repos":  3788297
-    },
-    {
-        "month":  "2024-04",
-        "new_repos":  3491849
-    },
-    {
-        "month":  "2024-05",
-        "new_repos":  3615820
-    },
-    {
-        "month":  "2024-06",
-        "new_repos":  3384323
-    },
-    {
-        "month":  "2024-07",
-        "new_repos":  3501393
-    },
-    {
-        "month":  "2024-08",
-        "new_repos":  3563135
-    },
-    {
-        "month":  "2024-09",
-        "new_repos":  3861675
-    },
-    {
-        "month":  "2024-10",
-        "new_repos":  4088089
-    },
-    {
-        "month":  "2024-11",
-        "new_repos":  3962997
-    },
-    {
-        "month":  "2024-12",
-        "new_repos":  3564519
-    },
-    {
-        "month":  "2025-01",
-        "new_repos":  3785697
-    },
-    {
-        "month":  "2025-02",
-        "new_repos":  4045292
-    },
-    {
-        "month":  "2025-03",
-        "new_repos":  4636207
-    },
-    {
-        "month":  "2025-04",
-        "new_repos":  4713323
-    },
-    {
-        "month":  "2025-05",
-        "new_repos":  5013695
-    },
-    {
-        "month":  "2025-06",
-        "new_repos":  4816929
-    },
-    {
-        "month":  "2025-07",
-        "new_repos":  5075627
-    },
-    {
-        "month":  "2025-08",
-        "new_repos":  5073280
-    },
-    {
-        "month":  "2025-09",
-        "new_repos":  5429684
-    },
-    {
-        "month":  "2025-10",
-        "new_repos":  5575994
-    },
-    {
-        "month":  "2025-11",
-        "new_repos":  5713493
-    },
-    {
-        "month":  "2025-12",
-        "new_repos":  5378875
-    },
-    {
-        "month":  "2026-01",
-        "new_repos":  5788414
-    },
-    {
-        "month":  "2026-02",
-        "new_repos":  6402987
-    },
-    {
-        "month":  "2026-03",
-        "new_repos":  7938386
-    },
-    {
-        "month":  "2026-04",
-        "new_repos":  7998858
-    },
-    {
-        "month":  "2026-05",
-        "new_repos":  8486225
-    },
-    {
-        "month":  "2026-06",
-        "new_repos":  8938734
-    },
-    {
-        "month":  "2026-07",
-        "new_repos":  7270743
-    }
-]
+﻿{
+    "rows":  [
+                 {
+                     "month":  "2008-02",
+                     "new_repos":  292
+                 },
+                 {
+                     "month":  "2008-03",
+                     "new_repos":  692
+                 },
+                 {
+                     "month":  "2008-04",
+                     "new_repos":  1220
+                 },
+                 {
+                     "month":  "2008-05",
+                     "new_repos":  1403
+                 },
+                 {
+                     "month":  "2008-06",
+                     "new_repos":  1547
+                 },
+                 {
+                     "month":  "2008-07",
+                     "new_repos":  1642
+                 },
+                 {
+                     "month":  "2008-08",
+                     "new_repos":  1943
+                 },
+                 {
+                     "month":  "2008-09",
+                     "new_repos":  2217
+                 },
+                 {
+                     "month":  "2008-10",
+                     "new_repos":  2607
+                 },
+                 {
+                     "month":  "2008-11",
+                     "new_repos":  2958
+                 },
+                 {
+                     "month":  "2008-12",
+                     "new_repos":  3883
+                 },
+                 {
+                     "month":  "2009-01",
+                     "new_repos":  4795
+                 },
+                 {
+                     "month":  "2009-02",
+                     "new_repos":  5142
+                 },
+                 {
+                     "month":  "2009-03",
+                     "new_repos":  5714
+                 },
+                 {
+                     "month":  "2009-04",
+                     "new_repos":  5872
+                 },
+                 {
+                     "month":  "2009-05",
+                     "new_repos":  6319
+                 },
+                 {
+                     "month":  "2009-06",
+                     "new_repos":  5785
+                 },
+                 {
+                     "month":  "2009-07",
+                     "new_repos":  6164
+                 },
+                 {
+                     "month":  "2009-08",
+                     "new_repos":  6288
+                 },
+                 {
+                     "month":  "2009-09",
+                     "new_repos":  6872
+                 },
+                 {
+                     "month":  "2009-10",
+                     "new_repos":  7759
+                 },
+                 {
+                     "month":  "2009-11",
+                     "new_repos":  8341
+                 },
+                 {
+                     "month":  "2009-12",
+                     "new_repos":  8564
+                 },
+                 {
+                     "month":  "2010-01",
+                     "new_repos":  10155
+                 },
+                 {
+                     "month":  "2010-02",
+                     "new_repos":  10713
+                 },
+                 {
+                     "month":  "2010-03",
+                     "new_repos":  12556
+                 },
+                 {
+                     "month":  "2010-04",
+                     "new_repos":  11753
+                 },
+                 {
+                     "month":  "2010-05",
+                     "new_repos":  12006
+                 },
+                 {
+                     "month":  "2010-06",
+                     "new_repos":  12639
+                 },
+                 {
+                     "month":  "2010-07",
+                     "new_repos":  13599
+                 },
+                 {
+                     "month":  "2010-08",
+                     "new_repos":  15205
+                 },
+                 {
+                     "month":  "2010-09",
+                     "new_repos":  16935
+                 },
+                 {
+                     "month":  "2010-10",
+                     "new_repos":  23019
+                 },
+                 {
+                     "month":  "2010-11",
+                     "new_repos":  21228
+                 },
+                 {
+                     "month":  "2010-12",
+                     "new_repos":  20116
+                 },
+                 {
+                     "month":  "2011-01",
+                     "new_repos":  24672
+                 },
+                 {
+                     "month":  "2011-02",
+                     "new_repos":  26724
+                 },
+                 {
+                     "month":  "2011-03",
+                     "new_repos":  30200
+                 },
+                 {
+                     "month":  "2011-04",
+                     "new_repos":  30842
+                 },
+                 {
+                     "month":  "2011-05",
+                     "new_repos":  32798
+                 },
+                 {
+                     "month":  "2011-06",
+                     "new_repos":  34736
+                 },
+                 {
+                     "month":  "2011-07",
+                     "new_repos":  34614
+                 },
+                 {
+                     "month":  "2011-08",
+                     "new_repos":  37250
+                 },
+                 {
+                     "month":  "2011-09",
+                     "new_repos":  41721
+                 },
+                 {
+                     "month":  "2011-10",
+                     "new_repos":  42165
+                 },
+                 {
+                     "month":  "2011-11",
+                     "new_repos":  45625
+                 },
+                 {
+                     "month":  "2011-12",
+                     "new_repos":  43928
+                 },
+                 {
+                     "month":  "2012-01",
+                     "new_repos":  52413
+                 },
+                 {
+                     "month":  "2012-02",
+                     "new_repos":  59722
+                 },
+                 {
+                     "month":  "2012-03",
+                     "new_repos":  66838
+                 },
+                 {
+                     "month":  "2012-04",
+                     "new_repos":  67153
+                 },
+                 {
+                     "month":  "2012-05",
+                     "new_repos":  69690
+                 },
+                 {
+                     "month":  "2012-06",
+                     "new_repos":  70235
+                 },
+                 {
+                     "month":  "2012-07",
+                     "new_repos":  102812
+                 },
+                 {
+                     "month":  "2012-08",
+                     "new_repos":  81577
+                 },
+                 {
+                     "month":  "2012-09",
+                     "new_repos":  86540
+                 },
+                 {
+                     "month":  "2012-10",
+                     "new_repos":  101860
+                 },
+                 {
+                     "month":  "2012-11",
+                     "new_repos":  107119
+                 },
+                 {
+                     "month":  "2012-12",
+                     "new_repos":  97441
+                 },
+                 {
+                     "month":  "2013-01",
+                     "new_repos":  126215
+                 },
+                 {
+                     "month":  "2013-02",
+                     "new_repos":  126803
+                 },
+                 {
+                     "month":  "2013-03",
+                     "new_repos":  151300
+                 },
+                 {
+                     "month":  "2013-04",
+                     "new_repos":  153090
+                 },
+                 {
+                     "month":  "2013-05",
+                     "new_repos":  149591
+                 },
+                 {
+                     "month":  "2013-06",
+                     "new_repos":  140177
+                 },
+                 {
+                     "month":  "2013-07",
+                     "new_repos":  153565
+                 },
+                 {
+                     "month":  "2013-08",
+                     "new_repos":  147435
+                 },
+                 {
+                     "month":  "2013-09",
+                     "new_repos":  160325
+                 },
+                 {
+                     "month":  "2013-10",
+                     "new_repos":  184102
+                 },
+                 {
+                     "month":  "2013-11",
+                     "new_repos":  183538
+                 },
+                 {
+                     "month":  "2013-12",
+                     "new_repos":  167784
+                 },
+                 {
+                     "month":  "2014-01",
+                     "new_repos":  201940
+                 },
+                 {
+                     "month":  "2014-02",
+                     "new_repos":  207638
+                 },
+                 {
+                     "month":  "2014-03",
+                     "new_repos":  242859
+                 },
+                 {
+                     "month":  "2014-04",
+                     "new_repos":  248598
+                 },
+                 {
+                     "month":  "2014-05",
+                     "new_repos":  248050
+                 },
+                 {
+                     "month":  "2014-06",
+                     "new_repos":  235590
+                 },
+                 {
+                     "month":  "2014-07",
+                     "new_repos":  269650
+                 },
+                 {
+                     "month":  "2014-08",
+                     "new_repos":  264089
+                 },
+                 {
+                     "month":  "2014-09",
+                     "new_repos":  275848
+                 },
+                 {
+                     "month":  "2014-10",
+                     "new_repos":  351146
+                 },
+                 {
+                     "month":  "2014-11",
+                     "new_repos":  303641
+                 },
+                 {
+                     "month":  "2014-12",
+                     "new_repos":  312411
+                 },
+                 {
+                     "month":  "2015-01",
+                     "new_repos":  376179
+                 },
+                 {
+                     "month":  "2015-02",
+                     "new_repos":  337475
+                 },
+                 {
+                     "month":  "2015-03",
+                     "new_repos":  453489
+                 },
+                 {
+                     "month":  "2015-04",
+                     "new_repos":  413424
+                 },
+                 {
+                     "month":  "2015-05",
+                     "new_repos":  405675
+                 },
+                 {
+                     "month":  "2015-06",
+                     "new_repos":  395138
+                 },
+                 {
+                     "month":  "2015-07",
+                     "new_repos":  423254
+                 },
+                 {
+                     "month":  "2015-08",
+                     "new_repos":  453347
+                 },
+                 {
+                     "month":  "2015-09",
+                     "new_repos":  450877
+                 },
+                 {
+                     "month":  "2015-10",
+                     "new_repos":  481728
+                 },
+                 {
+                     "month":  "2015-11",
+                     "new_repos":  474214
+                 },
+                 {
+                     "month":  "2015-12",
+                     "new_repos":  434727
+                 },
+                 {
+                     "month":  "2016-01",
+                     "new_repos":  506367
+                 },
+                 {
+                     "month":  "2016-02",
+                     "new_repos":  573983
+                 },
+                 {
+                     "month":  "2016-03",
+                     "new_repos":  644896
+                 },
+                 {
+                     "month":  "2016-04",
+                     "new_repos":  624305
+                 },
+                 {
+                     "month":  "2016-05",
+                     "new_repos":  599749
+                 },
+                 {
+                     "month":  "2016-06",
+                     "new_repos":  561922
+                 },
+                 {
+                     "month":  "2016-07",
+                     "new_repos":  584968
+                 },
+                 {
+                     "month":  "2016-08",
+                     "new_repos":  635801
+                 },
+                 {
+                     "month":  "2016-09",
+                     "new_repos":  705968
+                 },
+                 {
+                     "month":  "2016-10",
+                     "new_repos":  752636
+                 },
+                 {
+                     "month":  "2016-11",
+                     "new_repos":  749727
+                 },
+                 {
+                     "month":  "2016-12",
+                     "new_repos":  677996
+                 },
+                 {
+                     "month":  "2017-01",
+                     "new_repos":  749934
+                 },
+                 {
+                     "month":  "2017-02",
+                     "new_repos":  803987
+                 },
+                 {
+                     "month":  "2017-03",
+                     "new_repos":  947532
+                 },
+                 {
+                     "month":  "2017-04",
+                     "new_repos":  856685
+                 },
+                 {
+                     "month":  "2017-05",
+                     "new_repos":  875913
+                 },
+                 {
+                     "month":  "2017-06",
+                     "new_repos":  817259
+                 },
+                 {
+                     "month":  "2017-07",
+                     "new_repos":  846240
+                 },
+                 {
+                     "month":  "2017-08",
+                     "new_repos":  863163
+                 },
+                 {
+                     "month":  "2017-09",
+                     "new_repos":  933935
+                 },
+                 {
+                     "month":  "2017-10",
+                     "new_repos":  998460
+                 },
+                 {
+                     "month":  "2017-11",
+                     "new_repos":  1005708
+                 },
+                 {
+                     "month":  "2017-12",
+                     "new_repos":  888488
+                 },
+                 {
+                     "month":  "2018-01",
+                     "new_repos":  1032737
+                 },
+                 {
+                     "month":  "2018-02",
+                     "new_repos":  976683
+                 },
+                 {
+                     "month":  "2018-03",
+                     "new_repos":  1184335
+                 },
+                 {
+                     "month":  "2018-04",
+                     "new_repos":  1125705
+                 },
+                 {
+                     "month":  "2018-05",
+                     "new_repos":  1118584
+                 },
+                 {
+                     "month":  "2018-06",
+                     "new_repos":  1018977
+                 },
+                 {
+                     "month":  "2018-07",
+                     "new_repos":  1037056
+                 },
+                 {
+                     "month":  "2018-08",
+                     "new_repos":  1049528
+                 },
+                 {
+                     "month":  "2018-09",
+                     "new_repos":  1129825
+                 },
+                 {
+                     "month":  "2018-10",
+                     "new_repos":  1261593
+                 },
+                 {
+                     "month":  "2018-11",
+                     "new_repos":  1195901
+                 },
+                 {
+                     "month":  "2018-12",
+                     "new_repos":  1077216
+                 },
+                 {
+                     "month":  "2019-01",
+                     "new_repos":  1128478
+                 },
+                 {
+                     "month":  "2019-02",
+                     "new_repos":  1075907
+                 },
+                 {
+                     "month":  "2019-03",
+                     "new_repos":  1287268
+                 },
+                 {
+                     "month":  "2019-04",
+                     "new_repos":  1238833
+                 },
+                 {
+                     "month":  "2019-05",
+                     "new_repos":  1241260
+                 },
+                 {
+                     "month":  "2019-06",
+                     "new_repos":  1141157
+                 },
+                 {
+                     "month":  "2019-07",
+                     "new_repos":  1205673
+                 },
+                 {
+                     "month":  "2019-08",
+                     "new_repos":  1349487
+                 },
+                 {
+                     "month":  "2019-09",
+                     "new_repos":  1589547
+                 },
+                 {
+                     "month":  "2019-10",
+                     "new_repos":  1542526
+                 },
+                 {
+                     "month":  "2019-11",
+                     "new_repos":  1504389
+                 },
+                 {
+                     "month":  "2019-12",
+                     "new_repos":  1358357
+                 },
+                 {
+                     "month":  "2020-01",
+                     "new_repos":  1455324
+                 },
+                 {
+                     "month":  "2020-02",
+                     "new_repos":  1546237
+                 },
+                 {
+                     "month":  "2020-03",
+                     "new_repos":  1814878
+                 },
+                 {
+                     "month":  "2020-04",
+                     "new_repos":  1861382
+                 },
+                 {
+                     "month":  "2020-05",
+                     "new_repos":  1857291
+                 },
+                 {
+                     "month":  "2020-06",
+                     "new_repos":  1734074
+                 },
+                 {
+                     "month":  "2020-07",
+                     "new_repos":  1789370
+                 },
+                 {
+                     "month":  "2020-08",
+                     "new_repos":  1734261
+                 },
+                 {
+                     "month":  "2020-09",
+                     "new_repos":  1864823
+                 },
+                 {
+                     "month":  "2020-10",
+                     "new_repos":  1929160
+                 },
+                 {
+                     "month":  "2020-11",
+                     "new_repos":  1884970
+                 },
+                 {
+                     "month":  "2020-12",
+                     "new_repos":  1857110
+                 },
+                 {
+                     "month":  "2021-01",
+                     "new_repos":  1963450
+                 },
+                 {
+                     "month":  "2021-02",
+                     "new_repos":  1887804
+                 },
+                 {
+                     "month":  "2021-03",
+                     "new_repos":  2325742
+                 },
+                 {
+                     "month":  "2021-04",
+                     "new_repos":  2285356
+                 },
+                 {
+                     "month":  "2021-05",
+                     "new_repos":  2381420
+                 },
+                 {
+                     "month":  "2021-06",
+                     "new_repos":  2362990
+                 },
+                 {
+                     "month":  "2021-07",
+                     "new_repos":  2458630
+                 },
+                 {
+                     "month":  "2021-08",
+                     "new_repos":  2350502
+                 },
+                 {
+                     "month":  "2021-09",
+                     "new_repos":  2475231
+                 },
+                 {
+                     "month":  "2021-10",
+                     "new_repos":  2518014
+                 },
+                 {
+                     "month":  "2021-11",
+                     "new_repos":  2438642
+                 },
+                 {
+                     "month":  "2021-12",
+                     "new_repos":  2381651
+                 },
+                 {
+                     "month":  "2022-01",
+                     "new_repos":  2649034
+                 },
+                 {
+                     "month":  "2022-02",
+                     "new_repos":  2588934
+                 },
+                 {
+                     "month":  "2022-03",
+                     "new_repos":  2910489
+                 },
+                 {
+                     "month":  "2022-04",
+                     "new_repos":  2731096
+                 },
+                 {
+                     "month":  "2022-05",
+                     "new_repos":  2852138
+                 },
+                 {
+                     "month":  "2022-06",
+                     "new_repos":  2719958
+                 },
+                 {
+                     "month":  "2022-07",
+                     "new_repos":  2666137
+                 },
+                 {
+                     "month":  "2022-08",
+                     "new_repos":  2791148
+                 },
+                 {
+                     "month":  "2022-09",
+                     "new_repos":  2930657
+                 },
+                 {
+                     "month":  "2022-10",
+                     "new_repos":  3008897
+                 },
+                 {
+                     "month":  "2022-11",
+                     "new_repos":  3023939
+                 },
+                 {
+                     "month":  "2022-12",
+                     "new_repos":  2776722
+                 },
+                 {
+                     "month":  "2023-01",
+                     "new_repos":  2846120
+                 },
+                 {
+                     "month":  "2023-02",
+                     "new_repos":  2884594
+                 },
+                 {
+                     "month":  "2023-03",
+                     "new_repos":  3418830
+                 },
+                 {
+                     "month":  "2023-04",
+                     "new_repos":  3088511
+                 },
+                 {
+                     "month":  "2023-05",
+                     "new_repos":  3285826
+                 },
+                 {
+                     "month":  "2023-06",
+                     "new_repos":  3144161
+                 },
+                 {
+                     "month":  "2023-07",
+                     "new_repos":  3156279
+                 },
+                 {
+                     "month":  "2023-08",
+                     "new_repos":  3185508
+                 },
+                 {
+                     "month":  "2023-09",
+                     "new_repos":  3385430
+                 },
+                 {
+                     "month":  "2023-10",
+                     "new_repos":  3561745
+                 },
+                 {
+                     "month":  "2023-11",
+                     "new_repos":  3296950
+                 },
+                 {
+                     "month":  "2023-12",
+                     "new_repos":  3054077
+                 },
+                 {
+                     "month":  "2024-01",
+                     "new_repos":  3313085
+                 },
+                 {
+                     "month":  "2024-02",
+                     "new_repos":  3430063
+                 },
+                 {
+                     "month":  "2024-03",
+                     "new_repos":  3781355
+                 },
+                 {
+                     "month":  "2024-04",
+                     "new_repos":  3484345
+                 },
+                 {
+                     "month":  "2024-05",
+                     "new_repos":  3607919
+                 },
+                 {
+                     "month":  "2024-06",
+                     "new_repos":  3373411
+                 },
+                 {
+                     "month":  "2024-07",
+                     "new_repos":  3493064
+                 },
+                 {
+                     "month":  "2024-08",
+                     "new_repos":  3549762
+                 },
+                 {
+                     "month":  "2024-09",
+                     "new_repos":  3852061
+                 },
+                 {
+                     "month":  "2024-10",
+                     "new_repos":  4077984
+                 },
+                 {
+                     "month":  "2024-11",
+                     "new_repos":  3953020
+                 },
+                 {
+                     "month":  "2024-12",
+                     "new_repos":  3554725
+                 },
+                 {
+                     "month":  "2025-01",
+                     "new_repos":  3774939
+                 },
+                 {
+                     "month":  "2025-02",
+                     "new_repos":  4033206
+                 },
+                 {
+                     "month":  "2025-03",
+                     "new_repos":  4622201
+                 },
+                 {
+                     "month":  "2025-04",
+                     "new_repos":  4698294
+                 },
+                 {
+                     "month":  "2025-05",
+                     "new_repos":  4995640
+                 },
+                 {
+                     "month":  "2025-06",
+                     "new_repos":  4799564
+                 },
+                 {
+                     "month":  "2025-07",
+                     "new_repos":  5054931
+                 },
+                 {
+                     "month":  "2025-08",
+                     "new_repos":  5051519
+                 },
+                 {
+                     "month":  "2025-09",
+                     "new_repos":  5407043
+                 },
+                 {
+                     "month":  "2025-10",
+                     "new_repos":  5552001
+                 },
+                 {
+                     "month":  "2025-11",
+                     "new_repos":  5687106
+                 },
+                 {
+                     "month":  "2025-12",
+                     "new_repos":  5352199
+                 },
+                 {
+                     "month":  "2026-01",
+                     "new_repos":  5754658
+                 },
+                 {
+                     "month":  "2026-02",
+                     "new_repos":  6361220
+                 },
+                 {
+                     "month":  "2026-03",
+                     "new_repos":  7884810
+                 },
+                 {
+                     "month":  "2026-04",
+                     "new_repos":  7943386
+                 },
+                 {
+                     "month":  "2026-05",
+                     "new_repos":  8415429
+                 },
+                 {
+                     "month":  "2026-06",
+                     "new_repos":  8665056
+                 },
+                 {
+                     "month":  "2026-07",
+                     "new_repos":  8699350
+                 },
+                 {
+                     "month":  "2026-08",
+                     "new_repos":  4017469
+                 }
+             ],
+    "failures":  [
+
+                 ]
+}

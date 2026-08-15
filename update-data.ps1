@@ -32,28 +32,36 @@ if ($token) {
 
 $now = Get-Date
 
-# Build full month list from start to current month
+# Build full month list from start to the last COMPLETED month (excludes the in-progress current month)
 $months = @()
 $y = $startYear; $m = $startMonth
-while (($y -lt $now.Year) -or ($y -eq $now.Year -and $m -le $now.Month)) {
+while (($y -lt $now.Year) -or ($y -eq $now.Year -and $m -lt $now.Month)) {
     $months += "{0}-{1:D2}" -f $y, $m
     $m++
     if ($m -gt 12) { $m = 1; $y++ }
 }
 
-Write-Output "Re-checking all $($months.Count) months (public repos only)."
+$currentMonthStr = "{0}-{1:D2}" -f $now.Year, $now.Month
+Write-Output "Current month is $currentMonthStr - excluded (still in progress)."
+Write-Output "Pulling $($months.Count) completed months (public repos only):"
+Write-Output ($months -join ", ")
 
 $results = @{}
+$failures = @()
 
-# Create the file up front (empty array) so it exists from the start
-"[]" | Set-Content -Path $dataFile -Encoding UTF8
+# Create the file up front (empty structure) so it exists from the start
+'{"rows":[],"failures":[]}' | Set-Content -Path $dataFile -Encoding UTF8
 
 function Save-Results {
-    param($resultsTable, $path)
+    param($resultsTable, $path, $failedMonths)
     $sorted = $resultsTable.GetEnumerator() | Sort-Object Name | ForEach-Object {
         [PSCustomObject]@{ month = $_.Name; new_repos = $_.Value }
     }
-    $sorted | ConvertTo-Json | Set-Content -Path $path -Encoding UTF8
+    $output = [PSCustomObject]@{
+        rows     = $sorted
+        failures = $failedMonths
+    }
+    $output | ConvertTo-Json -Depth 4 | Set-Content -Path $path -Encoding UTF8
     return $sorted.Count
 }
 
@@ -66,17 +74,28 @@ foreach ($monthStr in $months) {
     $encodedQuery = [uri]::EscapeDataString($query)
     $url = "https://api.github.com/search/repositories?q=$encodedQuery&per_page=1"
 
-    try {
-        $response = Invoke-WebRequest -UseBasicParsing -Uri $url -Headers $headers -TimeoutSec 15 | ConvertFrom-Json
-        $results[$monthStr] = $response.total_count
-        Write-Output "$monthStr : $($response.total_count)"
-    } catch {
-        Write-Warning "$monthStr failed: $_"
+    $success = $false
+    for ($attempt = 1; $attempt -le 3; $attempt++) {
+        try {
+            $response = Invoke-WebRequest -UseBasicParsing -Uri $url -Headers $headers -TimeoutSec 15 | ConvertFrom-Json
+            $results[$monthStr] = $response.total_count
+            Write-Output "$monthStr : $($response.total_count)"
+            $success = $true
+            break
+        } catch {
+            Write-Warning "$monthStr attempt $attempt failed: $_"
+            if ($attempt -lt 3) { Start-Sleep -Seconds 3 }
+        }
     }
 
-    Save-Results -resultsTable $results -path $dataFile | Out-Null
+    if (-not $success) {
+        $failures += $monthStr
+        Write-Warning "$monthStr FAILED after 3 attempts - skipping."
+    }
+
+    Save-Results -resultsTable $results -path $dataFile -failedMonths $failures | Out-Null
 
     Start-Sleep -Seconds $sleepSeconds
 }
 
-Write-Output "data.json updated ($($results.Count) months)."
+Write-Output "data.json updated ($($results.Count) months, $($failures.Count) failures)."

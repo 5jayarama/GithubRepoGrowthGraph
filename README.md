@@ -1,4 +1,4 @@
-# HOSTED LIVE: https://5jayarama.github.io/GithubRepoGrowthGraph/
+**HOSTED LIVE: https://5jayarama.github.io/GithubRepoGrowthGraph/**
 
 **HOW TO RUN THIS REPO LOCALLY:**
 1. If data.json is already up to date

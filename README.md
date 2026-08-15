@@ -2,6 +2,7 @@
 
 Live site is on github static site, so it only updates on commit.
 
+
 **HOW TO RUN THIS REPO LOCALLY:**
 1. If data.json is already up to date
 cd into the repo folder

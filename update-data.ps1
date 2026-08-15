@@ -1,11 +1,3 @@
-# Fetches new-repos-per-month from GitHub Search API and maintains data.json
-# in the same folder as this script. Re-checks EVERY month on every run
-# (not just new/current ones) because past-month counts can drift downward
-# over time as repos get deleted or made private. Meant to run daily.
-#
-# Reads the token from a .env file in the same folder (GITHUB_TOKEN=...).
-# Add .env to .gitignore before pushing so the token never gets committed.
-
 $dataFile = Join-Path $PSScriptRoot "data.json"
 $envFile = Join-Path $PSScriptRoot ".env"
 $startYear = 2008

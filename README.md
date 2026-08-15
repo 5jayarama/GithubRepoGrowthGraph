@@ -29,5 +29,5 @@ Live site is on github static site, so it only updates on commit.
 1. Fetches new-repos-per-month from GitHub Search API and maintains data.json in the same folder as this script. Re-checks EVERY month's data on every run (not just new/current ones) because past-month counts can drift downward over time as repos get deleted or made private. Meant to run daily.
 2. Reads the token from a .env file in the same folder (GITHUB_TOKEN=...).
 
-Reference Image for those who don't like clicking links. This is what the link above shows.
+Reference Image for those who don't like clicking links. This is what the link at the top of the README.md shows.
 <img width="1678" height="947" alt="image" src="https://github.com/user-attachments/assets/3c6ada08-f107-456a-91ec-0538b4e0c286" />
